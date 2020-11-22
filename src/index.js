@@ -10,6 +10,7 @@ const getTemp = async (city, country) => {
     return; 
   }
   await getImage(weatherData.tempK);
+  clearError();
   renderTemp();
 };
 
@@ -27,17 +28,24 @@ const cityError = () => {
   document.querySelector(".city-error").classList.add("city-error-display");
 }
 
+const clearError = () => {
+  document.querySelector(".city-error").classList.remove("city-error-display");
+
+}
+
 (function() {
-  document.querySelector(".city-input").addEventListener("click", (e) => {
-    document.querySelector(".city-error").classList.remove("city-error-display");
-  });
+  document.querySelector(".city-input").addEventListener("focus", clearError);
+  
   document.querySelector(".unitButton").addEventListener("click", updateUnits);
+  
   document.querySelector(".temp").addEventListener("click", updateUnits);
+  
   document.querySelector(".getLocation").addEventListener("click", (e) => {
-    e.preventDefault();
+    e.preventDefault();  
     //validate form inputs
     const city = e.target.form.elements.city.value;
     const country = e.target.form.elements.country.value;
     getTemp(city, country);
   });
+
 })();

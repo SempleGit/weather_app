@@ -1,3 +1,20 @@
+html {
+  background: #C6E0FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6E0FF, #2978A0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6E0FF, #2978A0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+input, select {
+  font-size: 1rem;
+  padding: 5px 2px;
+  margin: 0 5px; 
+}
+
+.main-title {
+ font-family: 'Hind Vadodara', sans-serif;  
+ font-size: 3rem;
+}
 
 .wrapper {
   display: grid;
@@ -6,13 +23,21 @@
 }
 
 .getLocation {
-  padding: 5px;
+  padding: 2px 10px;
   margin: 5px;
 }
 
 .unitButton {
   justify-self: center;
-  padding: 5px 50px;
+  padding: 2px 50px;
+  margin: 5px;
+}
+
+.getLocation, .unitButton {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1.2rem;
+  background-color: #253031;
+  color: #fff;
 }
 
 .country-select, .unitButton, .temp, .getLocation {
@@ -49,7 +74,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: darkgrey;
+  background-color: #C6E0FF;
   border-radius: 100%;
   display: grid;
   justify-content: center;
@@ -57,10 +82,10 @@
 }
 
 .temp-display {
-  background-color: white;
+  background-color: #C6E0FF;
   border-radius: 5px;
   font-size: 1.25rem;
   font-weight: bold;
-  opacity: 75%;
+  opacity: 85%;
   padding: 5px;
 }

@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Hind+Vadodara:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Weather</h1>
+    <h1 class="main-title">Weather or Not</h1>
     <div class="wrapper">
       <form>
         <label class="city-label">City:
@@ -16,7 +18,7 @@
         </label>
         <label>Country:
           <select class="country-select" name="country" required>
-            <option value="choose">Choose a country</option>
+            <option disabled selected='true' value="">Choose a country</option>
             <option value="us">United States</option>
             <option value="uk">United Kingdom</option>
             <option value="ca">Canada</option>
