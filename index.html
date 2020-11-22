@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Weather</h1>
+    <div class="wrapper">
+      <form>
+        <label class="city-label">City:
+           <input class="city-input" name="city" type="text" placeholder="Enter Location" required>
+           <span class="city-error">Need valid city and country.</span>
+        </label>
+        <label>Country:
+          <select class="country-select" name="country" required>
+            <option value="choose">Choose a country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+          </select>
+        </label>
+        <input type="submit" class="getLocation" name="Get Weather">
+      </form>
+      <button class="unitButton" value="F">Current Units F</button>
+      <div class="tempWrapper">
+        <div class="temp"></div>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
