@@ -4,27 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Hind+Vadodara:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum&family=Hind+Vadodara:wght@500&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1 class="main-title">Weather or Not</h1>
     <div class="wrapper">
       <form>
-        <label class="city-label">City:
-           <input class="city-input" name="city" type="text" placeholder="Enter Location" required>
-           <span class="city-error">Need valid city and country.</span>
+        <label class="city-label"
+          >City:
+          <input
+            class="city-input"
+            name="city"
+            type="text"
+            placeholder="Enter Location"
+            required
+          />
+          <span class="city-error">Need valid city and country.</span>
         </label>
-        <label>Country:
+        <label
+          >Country:
           <select class="country-select" name="country" required>
-            <option disabled selected='true' value="">Choose a country</option>
+            <option disabled selected="true" value="">Choose a country</option>
             <option value="us">United States</option>
             <option value="uk">United Kingdom</option>
             <option value="ca">Canada</option>
           </select>
         </label>
-        <input type="submit" class="getLocation" name="Get Weather">
+        <input type="submit" class="getLocation" name="Get Weather" />
       </form>
       <button class="unitButton" value="F">Current Units F</button>
       <div class="tempWrapper">
