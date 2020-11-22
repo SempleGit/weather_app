@@ -30,7 +30,6 @@ const cityError = () => {
 
 const clearError = () => {
   document.querySelector(".city-error").classList.remove("city-error-display");
-
 }
 
 (function() {
