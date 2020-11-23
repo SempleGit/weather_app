@@ -44,6 +44,7 @@ const clearError = () => {
     //validate form inputs
     const city = e.target.form.elements.city.value;
     const country = e.target.form.elements.country.value;
+    e.target.form.reset();
     getTemp(city, country);
   });
 

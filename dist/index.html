@@ -13,16 +13,19 @@
     <div class="wrapper">
       <form>
         <label class="city-label">City:
-           <input class="city-input" name="city" type="text" placeholder="Enter Location" required>
+           <input class="city-input" name="city" type="text" placeholder="City" required>
            <span class="city-error">Need valid city and country.</span>
         </label>
         <label>Country:
-          <select class="country-select" name="country" required>
-            <option disabled selected='true' value="">Choose a country</option>
+          <input type="text" class="country-select" list="countries" name="country" placeholder="Two letter country code" maxlength="2" required>
+          <datalist id="countries">
             <option value="us">United States</option>
             <option value="uk">United Kingdom</option>
+            <option value="br">Brazil</option>
+            <option value="au">Australia</option>
+            <option value="nz">New Zealand</option>
             <option value="ca">Canada</option>
-          </select>
+          </datalist>
         </label>
         <input type="submit" class="getLocation" name="Get Weather">
       </form>
