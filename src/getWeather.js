@@ -7,7 +7,6 @@ const getWeather = async (city, country) => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=
   ${city.replace(" ", "%20")},${country}
   &APPID=${WEATHER_API}`;
-  console.log(url); 
   const request = await fetch(url);
   const parseRequest = await request.json();
   parseWeather(parseRequest);
