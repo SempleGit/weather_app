@@ -35,7 +35,11 @@ const getImage = async (temp) => {
 };
 
 const parseImage = (parseRequest) => {
-  imageData.imageUrl = parseRequest.data.images.original.url;
+  try {
+    imageData.imageUrl = parseRequest.data.images.original.url;
+  } catch {
+    imageData.imageUrl = "https://media.giphy.com/media/lS751JCp7am1WGgK7h/source.gif";
+  }
 }
 
 const apiStore = () => {

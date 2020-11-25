@@ -4,9 +4,7 @@ const weatherData = {};
 
 const getWeather = async (city, country) => {
   const WEATHER_API = apiStore();
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=
-  ${city.replace(" ", "%20")},${country}
-  &APPID=${WEATHER_API}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.replace(" ", "%20")},${country}&APPID=${WEATHER_API}`;
   const request = await fetch(url);
   const parseRequest = await request.json();
   parseWeather(parseRequest);
